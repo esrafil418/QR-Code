@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Outfit-Bold.ttf") format("truetype");
+}
+
+:root {
+  --text-black: hsl(218, 44%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+}
+
+[data-theme="dark"] {
+  --text-black: hsl(0, 0%, 82%);
+  --white: hsl(217, 53%, 25%);
+  --slate-300: hsl(213, 67%, 8%);
+  --slate-500: hsl(216, 30%, 62%);
+  --slate-900: hsl(218, 44%, 22%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Outfit";
+  background: var(--slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 13px;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.qr-code img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 2px 0 15px 0;
+}
+
+.cart-hrader h2 {
+  font-size: 1.5rem;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: var(--text-black);
+}
+
+.cart-paragraph p {
+  text-align: center;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 30px 10px;
+  word-spacing: 1px;
+  color: var(--slate-500);
+}
+
+/* Dark Mode Button  */
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  background: var(--white);
+  color: var(--text-black);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#themeToggle:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 1200px) {
+  #themeToggle {
+    top: 20px;
+    right: 20px;
+  }
+
+  .container {
+    width: 400px;
+  }
+  .qr-code img {
+    width: 395px;
+  }
+  .cart-hrader h2 {
+    font-size: 1.8rem;
+  }
+  .cart-paragraph p {
+    width: 320px;
+    margin: 10px 20px 40px 20px;
+    word-spacing: 2px;
+  }
+}
