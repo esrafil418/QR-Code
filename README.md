@@ -10,6 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Screenshots
 
 ![](./assets/images/screenshots/screenshot-1.png)
+
 ![](./assets/images/screenshots/screenshot-2.png)
 
 ### Built with
