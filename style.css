@@ -35,7 +35,7 @@ body {
   height: 100vh;
 }
 
-.container {
+main {
   background: var(--white);
   display: flex;
   flex-direction: column;
@@ -47,13 +47,13 @@ body {
   border-radius: 15px;
 }
 
-.qr-code img {
+main .qr-code img {
   width: 300px;
   border-radius: 10px;
   margin: 2px 0 15px 0;
 }
 
-.cart-hrader h2 {
+main .cart-hrader h2 {
   font-size: 1.5rem;
   padding: 0 10px 0 10px;
   text-align: center;
@@ -61,7 +61,7 @@ body {
   color: var(--text-black);
 }
 
-.cart-paragraph p {
+main .cart-paragraph p {
   text-align: center;
   padding: 0 10px 0 10px;
   margin: 0 10px 30px 10px;
